@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en" data-language="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" id="meta-description"
+    content="Abdellah Arrouche — Computer Science portfolio covering software engineering, analytics, web development and serious games." />
+  <title id="page-title">Abdellah Arrouche — Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/BespectacledBeaver.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700;800&family=Figtree:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="halo halo-1"></div>
+  <div class="halo halo-2"></div>
+
+  <header>
+    <a style="grid-column:logo;" href="https://github.com/BespectacledBeaver" target="_blank">
+      <img class="logo" src="assets/BespectacledBeaver.png" alt="BespectacledBeaver">
+    </a>
+    <nav class="navbar" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#reports" data-i18n="nav.reports">Reports</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-controls">
+      <button class="light-mode-toggle" id="light-mode-toggle" aria-label="Toggle light mode" title="Toggle light mode">
+        <span class="moon"></span><span class="sun"></span>
+      </button>
+      <!-- UNDER CONSTRUCTION -->
+      <!--
+      <button class="language-toggle" id="language-toggle" aria-label="Switch language" title="Switch language">
+        <span data-lang-option="en" class="active">EN</span><span data-lang-option="fr">FR</span>
+      </button>
+    -->
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero content-grid">
+      <div class="section-heading breakout compact"
+        style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> <span data-i18n="hero.eyebrow">Computer Science · Software
+              Engineering</span></p>
+          <h1 data-i18n="hero.title">Here to build <span>projects</span> &amp; chew gum, <span>and I'm all outta of
+              gum.</span></h1>
+          <p class="hero-lead" data-i18n="hero.lead">I'm <strong>Abdellah Arrouche</strong>, a computer science engineer
+            interested in Data Science, Information Visualisation and Business Intelligence.</p>
+          <div class="hero-links">
+            <a class="hero-link" href="#projects" data-i18n="hero.viewProjects">View projects ↘</a>
+            <a class="hero-link" href="resume.pdf" target="_blank"
+              data-i18n="hero.readReports">Read resume ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal" id="hero-terminal" aria-label="Portfolio summary">
+          <div class="terminal-top"><span></span><span></span><span></span><small>portfolio.config</small></div>
+          <div class="terminal-body">
+            <p><i>const</i> developer = {</p>
+            <p>&nbsp;&nbsp;name: <b>"Abdellah Arrouche"</b>,</p>
+            <!--<p>&nbsp;&nbsp;projects: <b>4</b>,</p>-->
+            <p>&nbsp;&nbsp;focus: [</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<em>"data science"</em>, <em>"software engineering"</em>,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<em>"business intelligence"</em>, <em>"web development"</em></p>
+            <p>&nbsp;&nbsp;],</p>
+            <p>&nbsp;&nbsp;status: <em id="terminal-status">"open to opportunities"</em></p>
+            <p>}; <span class="cursor"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="stats breakout">
+        <div class="stat"><strong>02</strong><span data-i18n="stats.projects">internships</span></div>
+        <div class="stat"><strong>04</strong><span data-i18n="stats.projects">showcased projects</span></div>
+        <div class="stat"><strong>06+</strong><span data-i18n="stats.areas">technology areas</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects content-grid">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="projects.eyebrow">01 / Selected work</p>
+        <h2 data-i18n="projects.title">Projects, kept <span>clear.</span></h2>
+        <p data-i18n="projects.intro">Four projects across web development, analytics and game-based learning.</p>
+      </div>
+
+      <div class="project-list breakout">
+        <article class="project-showcase" data-project="rere">
+          <div class="project-visual"><img src="assets/rere_thumbnail.png" alt="Refactal Reimagined tutorial room"
+              id="alt-rere"></div>
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="project01.label">PROJECT 01</span><span>2025—2026</span></div>
+            <h3 data-i18n="project01.title">Refactal: Reimagined<br><span>RE:RE</span></h3>
+            <p class="project-description" data-i18n="project01.desc">A complete remake of a 2D educational
+              puzzle-platformer, where
+              executable code becomes part of the gameplay.</p>
+            <div class="project-stack">
+              <span>Godot</span><span>GDScript</span><span>Supabase</span><span>Metabase</span>
+            </div>
+            <div class="project-details">
+              <div><b data-i18n="project02.coreLabel">Core</b>
+                <p data-i18n="project02.core">Custom lexer, parser, validator and executor connected directly to game
+                  objects.</p>
+              </div>
+              <div><b data-i18n="project01.evalLabel">Evaluation</b>
+                <p data-i18n="project01.eval">52-student pilot<br>4.22/5 satisfaction<br>4.50/5 fun</p>
+              </div>
+            </div>
+            <a class="report-link" href="reports/refactal-reimagined-report.pdf" target="_blank"
+              data-i18n="links.readDissertation">Read dissertation ↗</a>
+          </div>
+        </article>
+
+        <article class="project-showcase" data-project="dashboard">
+          <div class="project-visual"><img src="assets/dashboard.png"
+              alt="Refactal administrative dashboard player analytics" id="alt-dashboard"></div>
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="project02.label">PROJECT 02</span><span>2024</span></div>
+            <h3 data-i18n="project02.title">Refactal<br>Administrative Dashboard</h3>
+            <p class="project-description" data-i18n="project02.desc">Gameplay analytics dashboard for monitoring player
+              activity, progression and engagement.</p>
+            <div class="project-stack"><span>PostgreSQL</span><span>Metabase</span><span>Docker</span></div>
+            <div class="project-details">
+              <div><b data-i18n="project02.focusLabel">Focus</b>
+                <p data-i18n="project02.focus">Turn raw gameplay events into practical views for moderators and
+                  supervisors.</p>
+              </div>
+              <div><b data-i18n="project02.viewsLabel">Views</b>
+                <p data-i18n="project02.views">General activity, levels, individual players, engagement and KPIs.</p>
+              </div>
+            </div>
+            <a class="report-link" href="reports/refactal-dashboard-report.pdf" target="_blank"
+              data-i18n="links.readReport">Read report ↗</a><small style="font-weight:400; color: var(--neutral-500);">
+              (in French only)</small>
+          </div>
+        </article>
+
+        <article class="project-showcase" data-project="search">
+          <div class="project-visual"><img src="assets/scientific_articles_engine.png"
+              alt="Scientific article search engine architecture" id="alt-search"></div>
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="project03.label">PROJECT 03</span><span>2023</span></div>
+            <h3 data-i18n="project03.title">Scientific Article<br>Search Engine</h3>
+            <p class="project-description" data-i18n="project03.desc">Web application for searching scientific articles
+              from user-provided keywords.</p>
+            <div class="project-stack">
+              <span>ReactJS</span><span>Django</span><span>PostgreSQL</span><span>ElasticSearch</span>
+            </div>
+            <div class="project-details">
+              <div><b data-i18n="project03.archLabel">Architecture</b>
+                <p data-i18n="project03.arch">ReactJS frontend, Django backend and PostgreSQL persistence.</p>
+              </div>
+              <div><b data-i18n="project03.searchLabel">Search</b>
+                <p data-i18n="project03.search">ElasticSearch used for advanced/full-text search capabilities.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-showcase" data-project="ikhteyar">
+          <div class="project-visual"><img src="assets/ikhteyar.png" alt="IKHTEYAR banking service comparison interface"
+              id="alt-ikhteyar"></div>
+          <div class="project-info">
+            <div class="project-meta"><span data-i18n="project04.label">PROJECT 04</span><span>2023</span></div>
+            <h3 data-i18n="project04.title">IKHTEYAR<br><span>Banking Comparison</span></h3>
+            <p class="project-description" data-i18n="project04.desc">Responsive web platform for exploring, filtering
+              and comparing banking services in Algeria.</p>
+            <div class="project-stack"><span>PHP</span><span>JavaScript</span><span>MySQL</span><span>MVC</span></div>
+            <div class="project-details">
+              <div><b data-i18n="project04.featuresLabel">Features</b>
+                <p data-i18n="project04.features">Bank information, filters, sorting, fees, branches and side-by-side
+                  comparison.</p>
+              </div>
+              <div><b data-i18n="project04.structureLabel">Structure</b>
+                <p data-i18n="project04.structure">MVC-based application with administrative functionality for managing
+                  data.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- More Projects
+      <div class="more-projects breakout">
+        <div class="more-heading">
+          <p class="eyebrow" data-i18n="more.eyebrow">More work</p>
+          <h2 data-i18n="more.title">There is room for <span>what comes next.</span></h2>
+        </div>
+        <div class="project-slots">
+          <div class="slot"><span data-i18n="more.p05">PROJECT 05</span><strong data-i18n="more.next">Coming
+              next</strong><small data-i18n="more.slot">Summary · stack · link</small></div>
+          <div class="slot"><span data-i18n="more.p06">PROJECT 06</span><strong data-i18n="more.next">Coming
+              next</strong><small data-i18n="more.slot">Summary · stack · link</small></div>
+          <div class="slot"><span data-i18n="more.p07">PROJECT 07</span><strong data-i18n="more.next">Coming
+              next</strong><small data-i18n="more.slot">Summary · stack · link</small></div>
+        </div>
+      </div>
+    -->
+    </section>
+
+    <section id="reports" class="reports content-grid">
+      <div class="section-heading breakout compact">
+        <p class="eyebrow" data-i18n="reports.eyebrow">02 / Source documents</p>
+        <h2 data-i18n="reports.title">Full reports, <span>when you want the details.</span></h2>
+      </div>
+      <div class="section-heading breakout compact">
+        <p style="margin:0; color:var(--neutral-500); font:400 var(--fs-300)/1.5 var(--ff-other); max-width: unset;">
+          This is meant for students pursuing a degree in Computer Science or related fields, in institutions similar to
+          the one I attended. The reports
+          included where applauded by professors I hold in great esteem, and I hope they can serve as a reference for
+          others. If you are a student, please feel free to use them as a guide for your own work, but don't take them
+          as gospel <strong style="color:var(--clr-text);">PLEASE</strong>.
+        </p>
+      </div>
+      <div class="report-list breakout">
+        <a href="reports/refactal-dashboard-report.pdf" target="_blank"><span>2024</span><strong
+            data-i18n="reports.r1">Refactal — Administrative Dashboard Report<small
+              style="font-weight:400; color: var(--neutral-500);"> (in French only)</small></strong><b
+            data-i18n="reports.pdf">PDF ↗</b></a>
+        <a href="reports/c-practical-work-report.pdf" target="_blank"><span>2022</span><strong data-i18n="reports.r2">C
+            Practical Work Report<small style="font-weight:400; color: var(--neutral-500);"> (in French
+              only)</small></strong><b data-i18n="reports.pdf">PDF ↗</b></a>
+        <a href="reports/pascal-practical-work-report.pdf" target="_blank"><span>2021</span><strong
+            data-i18n="reports.r3">Pascal Practical Work Report<small
+              style="font-weight:400; color: var(--neutral-500);"> (in French only)</small></strong><b
+            data-i18n="reports.pdf">PDF
+            ↗</b></a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact content-grid">
+      <div class="section-heading breakout">
+        <p class="eyebrow" data-i18n="contact.eyebrow">03 / Contact</p>
+        <h2 data-i18n="contact.title">Let's <span>connect.</span></h2>
+        <p data-i18n="contact.intro">Interested in a project, collaboration, or an opportunity? You can find me here.
+        </p>
+      </div>
+
+      <div class="contact-grid breakout">
+        <a class="contact-item" href="https://github.com/BespectacledBeaver" target="_blank" rel="noopener noreferrer">
+          <span></span>
+          <div>
+            <small data-i18n="contact.githubLabel">GitHub</small>
+            <strong>BespectacledBeaver ↗</strong>
+            <p data-i18n="contact.githubText">Projects, code and experiments.</p>
+          </div>
+        </a>
+        <a class="contact-item" href="https://dz.linkedin.com/in/abdellah-arrouche" target="_blank"
+          rel="noopener noreferrer">
+          <span></span>
+          <div>
+            <small data-i18n="contact.linkedinLabel">LinkedIn</small>
+            <strong>Abdellah Arrouche ↗</strong>
+            <p data-i18n="contact.linkedinText">Professional profile and career updates.</p>
+          </div>
+        </a>
+        <a class="contact-item" href="mailto:abdellah.arrouche.03@gmail.com">
+          <span></span>
+          <div>
+            <small data-i18n="contact.emailLabel">Email</small>
+            <strong>abdellah.arrouche.03@gmail.com</strong>
+            <p data-i18n="contact.emailText">The best way to reach me.</p>
+          </div>
+        </a>
+        <div class="contact-item contact-item-static">
+          <span></span>
+          <div>
+            <small data-i18n="contact.statusLabel">Availability</small>
+            <strong data-i18n="contact.status">Open to opportunities</strong>
+            <p data-i18n="contact.statusText">Software engineering, data, web development and related projects.</p>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="content-grid">
+    <div class="footer-main breakout">
+      <a style="grid-column:logo;" href="https://github.com/BespectacledBeaver" target="_blank">
+        <img class="logo" src="assets/BespectacledBeaver.png" alt="BespectacledBeaver">
+      </a>
+      <div><strong>Abdellah Arrouche</strong>
+        <p data-i18n="footer.role">Computer Science · Software Engineering · Data Science · Business Intelligence · Web
+          Development</p>
+      </div>
+    </div>
+    <div class="footer-bottom breakout"><span data-i18n="footer.built">Built as a static GitHub Pages
+        portfolio.</span><span>© 2026</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
